@@ -31,19 +31,13 @@ class MSMT17(BaseImageDataset):
     def __init__(self,root='/home/haoluo/data', verbose=True, **kwargs):
         super(MSMT17, self).__init__()
         self.dataset_dir = osp.join(root, self.dataset_dir)
+
         self.train_dir = osp.join(self.dataset_dir, 'MSMT17_V1/test')
         self.test_dir = osp.join(self.dataset_dir, 'MSMT17_V1/train')
-        # self.train_dir = osp.join(self.dataset_dir, 'MSMT17_V1/test')
-        # self.test_dir = osp.join(self.dataset_dir, 'MSMT17_V1/train')
-        # self.list_train_path = osp.join(self.dataset_dir, 'MSMT17_V1/list_train.txt')
-        # self.list_val_path = osp.join(self.dataset_dir, 'MSMT17_V1/list_val.txt')
-        # self.list_query_path = osp.join(self.dataset_dir, 'MSMT17_V1/list_query.txt')
-        # self.list_gallery_path = osp.join(self.dataset_dir, 'MSMT17_V1/list_gallery.txt')
-
-        self.list_train_path = osp.join(self.dataset_dir, 'MSMT17_V1/MSMT17-TXT/list_train_interfere5.txt')
+        self.list_train_path = osp.join(self.dataset_dir, 'MSMT17_V1/list_train.txt')
         self.list_val_path = osp.join(self.dataset_dir, 'MSMT17_V1/list_val.txt')
-        self.list_query_path = osp.join(self.dataset_dir, 'MSMT17_V1/MSMT17-TXT/list_query_interfere3.txt')
-        self.list_gallery_path = osp.join(self.dataset_dir, 'MSMT17_V1/MSMT17-TXT/list_gallery_interfere3.txt')
+        self.list_query_path = osp.join(self.dataset_dir, 'MSMT17_V1/list_query.txt')
+        self.list_gallery_path = osp.join(self.dataset_dir, 'MSMT17_V1/list_gallery.txt')
 
         self._check_before_run()
         train = self._process_dir(self.train_dir, self.list_train_path)

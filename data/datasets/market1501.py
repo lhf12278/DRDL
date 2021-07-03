@@ -28,8 +28,8 @@ class Market1501(BaseImageDataset):
     def __init__(self, root='/home/haoluo/data', verbose=True, **kwargs):
         super(Market1501, self).__init__()
         self.dataset_dir = osp.join(root, self.dataset_dir)
-        # self.train_dir = osp.join(self.dataset_dir, 'bounding_box_train')
-        self.train_dir = osp.join(self.dataset_dir, 'market_bounding_box_train_interfere6')
+        self.train_dir = osp.join(self.dataset_dir, 'bounding_box_train')
+        # self.train_dir = osp.join(self.dataset_dir, 'market_bounding_box_train_interfere6')
         self.query_dir = osp.join(self.dataset_dir, 'query')
         self.gallery_dir = osp.join(self.dataset_dir, 'bounding_box_test')
 
