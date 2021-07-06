@@ -50,7 +50,7 @@ def main():
     print("=> start testing. Please wait...")
     evaluator.run(val_loader)
     cmc, mAP = evaluator.state.metrics['r1_mAP']
-    logger.info("Validation Result using best model")
+
     logger.info("mAP: {:.1%}".format(mAP))
     for i in [1, 5, 10, 20, 30, 50]:
         logger.info("CMC curve, Rank-{:<3}:{:.1%}".format(i, cmc[i - 1]))
