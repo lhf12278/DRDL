@@ -1,0 +1,7 @@
+2022-09-01 15:20:49,868 Duke2Market INFO: => Training on dukemtmc and Testing on market1501
+2022-09-01 15:22:12,511 Duke2Market INFO: Validation Result using best model
+2022-09-01 15:22:12,511 Duke2Market INFO: mAP: 38.1%
+2022-09-01 15:22:12,511 Duke2Market INFO: CMC curve, Rank-1  :72.7%
+2022-09-01 15:22:12,511 Duke2Market INFO: CMC curve, Rank-5  :85.0%
+2022-09-01 15:22:12,511 Duke2Market INFO: CMC curve, Rank-10 :89.1%
+2022-09-01 15:22:12,511 Duke2Market INFO: finished!
